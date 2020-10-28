@@ -1,5 +1,5 @@
-// Source: 14 CS 106B Lecture Backtracking printBinary, printDecimal
-// https://youtu.be/zL4mjpYpRmc
+// Reference: 19 CS 106B Lecture Backtracking 8 Queens
+// https://youtu.be/MLFe8srYeEY
 #include <iostream>
 #include <vector>
 #include <algorithm>
