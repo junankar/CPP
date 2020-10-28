@@ -104,5 +104,5 @@ void PlaceQueens(int n)
 
 int main()
 {
-    PlaceQueens(4);
+    PlaceQueens(8);
 }

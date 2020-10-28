@@ -16,11 +16,13 @@ void DiceRollHelper(int diceIndex, vector<int>& combination, int currentSum, int
     }
     else if(diceIndex > 0)
     {
-        int maxValueForCurrentDice = targetSum - currentSum - diceIndex + 1;
-
         // Current dice can contribute to 1-6 values
         // However, it can go upto a maximum value where 
-        // each of other dice can atleast contribute 1
+        // each of other dice can atleast contribute 1        
+        int maxValueForCurrentDice = targetSum - currentSum - diceIndex + 1;
+        if(maxValueForCurrentDice > 6)
+            maxValueForCurrentDice = 6;
+
         for(int i=1; i<=maxValueForCurrentDice; ++i)
         {
             // Choose one value for current die
